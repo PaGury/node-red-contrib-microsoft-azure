@@ -1,0 +1,23 @@
+<script type="text/javascript">
+    RED.nodes.registerType('azure-config',{
+        category: 'config',
+        defaults: {
+            accountName: {value: "", required: true},
+            accountKey: {value: "", required: true}
+        },
+        label: function() {
+            return this.accountName;
+        }
+    });
+</script>
+
+<script type="text/x-red" data-template-name="azure-config">
+    <div class="form-row">
+        <label for="node-config-input-accountName">Account name</label>
+        <input type="text" id="node-config-input-accountName" placeholder="Account name">
+    </div>
+    <div class="form-row">
+        <label for="node-config-input-accountKey">Account key</label>
+        <input type="text" id="node-config-input-accountKey" placeholder="Account key">
+    </div>
+</script>

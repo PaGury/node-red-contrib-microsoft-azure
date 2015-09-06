@@ -1,0 +1,19 @@
+{
+  "name": "node-red-contrib-microsoft-azure",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "dependencies": {
+    "azure-storage": "0.5.0"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "node-red": {
+    "nodes": {
+      "azure-blob in": "azure-blob in.js",
+      "azure-blob out": "azure-blob out.js",
+      "azure-config": "azure-config.js"
+    }
+  }
+}
